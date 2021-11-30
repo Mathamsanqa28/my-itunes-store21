@@ -8,8 +8,7 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUNCTION=false npm install --prefix client && npm run build --prefix fontend"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Nomathamsanqa Nyathi",
   "license": "ISC",
@@ -32,5 +31,6 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "heroku-run-build-script": true
 }
