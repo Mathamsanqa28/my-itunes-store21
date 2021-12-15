@@ -9,10 +9,10 @@ add and remove items** favorites in a list.
 
 ## Requirements 
 ### Node.js
-### Helmet to create headers that protect the attacks (security)
-### Download and decompress app to local machine
+### **Helmet** to create headers that protect the attacks (security)
 
 # Usage
+#### Download and decompress app to local machine
 **Backend**
 -open terminal
 -``npm install && npm start``
