@@ -45,17 +45,25 @@ function Card(props) {
         sessionStorage.setItem('favList', JSON.stringify(addFav));
         alert('Item added successfully');
         setDisplay(true);
-        window.location.reload()
+        window.location.reload();
     }
 
     useEffect(() => {
-        
-      if (display === true) {
-        for (let i = 0; i < 1; i++) {
-          setDisplay(false);
+        // let array = JSON.parse(sessionStorage.getItem('favList'));
+        // for (let i = 0; i < array.length; i++){
+            // sessionStorage.setItem('favList', JSON.stringify(array));
+
+        // if (sessionStorage.getItem('favList') !== null) {
+        //     setDisplay(true);
+        //     }
+
+        if (display === true) {
+            for (let i = 0; i < 1; i++) {
+                setDisplay(false);
+            }
         }
-      }
-    }, [isFav, display]
+
+        }, [isFav, display]
     )
 
     return (
@@ -80,5 +88,4 @@ function Card(props) {
         
     )
 }
-
 export default Card;

@@ -62,12 +62,12 @@ option {
 
 .card-type {
     width: 100%;
-    height: 5px;
+    height: 0.25px;
     text-transform: capitalize;
     font-size: medium;
 }
 
-.card-links:hover {
+.card-link:hover {
     color: black;
 }
 
@@ -75,11 +75,7 @@ option {
     width: 150px;
     height: 15rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.card-type {
-    text-transform: capitalize;
-    font-size: small;
+    color:black;
 }
 
 .display-card-body {
@@ -87,7 +83,7 @@ option {
     width: 16rem;
     display: inline-block;
     border-radius: 0.5rem 1.5rem 0.5rem 1.5rem;
-    border: 4px solid black;
+    border: 10% solid black;;
     margin: 0.5rem;
     background-color: teal;
 }
@@ -96,11 +92,9 @@ option {
     text-decoration: none;
     color: yellow;
 }
-
-.card-link:hover {
-    color: black;
+.display-card-body:hover{
+    color: black !important;
 }
-
 .fav-items {
     display: inline-block;
     margin: 1rem;

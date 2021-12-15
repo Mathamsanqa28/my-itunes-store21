@@ -4,33 +4,30 @@
   "description": "frontend react.js app with backend express.js api interaction",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "author": "Nomathamsanqa Nyathi",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "1.19.0",
+    "body-parser": "^1.19.0",
     "dotenv": "10.0.0",
-    "express": "4.17.1",
+    "express": "^4.17.1",
     "helmet": "4.6.0",
     "isomorphic-fetch": "3.0.0",
     "nodemon": "2.0.15",
     "request": "2.88.2"
   },
   "devDependencies": {
-    "chai": "4.3.4",
+    "chai": "^4.3.4",
     "mocha": "9.1.3"
   },
   "engines": {
     "node": "14.17.5",
     "npm": "6.14.14"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "heroku-run-build-script": true
+  }
 }
