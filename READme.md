@@ -23,6 +23,7 @@ add and remove items** favorites in a list.
 -``npm install && npm start``
 
 # Testing
+
 -open terminal
 ``cd`` into root directory
 enter ``npm test`` to run the server test
